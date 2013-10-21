@@ -10,9 +10,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'bootstrap-sass', '~> 2.3.2.2'
 gem 'haml-rails'
 gem 'pg'
-group :assets do
-  gem 'therubyracer', :platform=>:ruby
-end
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
@@ -27,14 +25,17 @@ group :development do
   gem 'rb-fsevent', :require=>false
   gem 'rb-inotify', :require=>false
 end
+
 group :development, :test do
   gem 'fabrication'
   gem 'rspec-rails'
   gem 'thin'
 end
+
 group :production do
   gem 'unicorn'
 end
+
 group :test do
   gem 'capybara'
   gem 'database_cleaner', '1.0.1'
