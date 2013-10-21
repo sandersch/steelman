@@ -1,0 +1,2 @@
+class SteelmanController < ApplicationController
+end
