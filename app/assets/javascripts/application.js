@@ -14,4 +14,13 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require turbolinks
+//= require handlebars
+//= require ember
+//= require ember-data
+//= require_self
+//= require steelman
+
+// for more details see: http://emberjs.com/guides/application/
+Steelman = Ember.Application.create();
+
 //= require_tree .
